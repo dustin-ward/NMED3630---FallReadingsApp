@@ -28,13 +28,14 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline' fonts.googleapis.com; media-src *; img-src 'self' data: content:; connect-src 'self' https://api.openweathermap.org; font-src 'self' fonts.gstatic.com;">
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
         <meta name="color-scheme" content="light dark">
         <link rel="stylesheet" href="css/framework7-bundle.min.css">
         <link rel="stylesheet" href="css/index.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <title>FallReadings</title>
     </head>
     <body>
@@ -44,25 +45,48 @@
 
                 <div class="page" data-name="home">
 
-                    <h1> Fall Things! </h1>
+                    <!-- Top Toolbar -->
+                    <div class="navbar">
+                        <div class="navbar-bg"></div>
+                        <div class="navbar-inner">
+                            <div class="title-large-text">
+                                Fall Media Collection
+                                <span class="material-icons" style="color: var(--f7-theme-color);">
+                                    energy_savings_leaf
+                                </span>
+                            </div>
+                        </div>
+                    </div>
 
                     <div class="page-content">
 
+                        <div class="category-header">
+                            <h2>Categories:</h2>
+                        </div>
+
                         <div class="media-categories-container">
-                            <div class="row">
+                            <div class="row resizeable">
                                 <a class="link col-50 media-category" href="/readings/">
-                                    Readings
+                                    <span class="material-icons md-64">
+                                        menu_book
+                                    </span>
                                 </a>
                                 <a class="link col-50 media-category" href="/music/">
-                                    Music
+                                    <span class="material-icons md-64">
+                                        music_note
+                                    </span>
                                 </a>
                             </div>
-                            <div class="row">
+                            <div class="row resizeable">
                                 <a class="link col-50 media-category" href="/shows/">
-                                    Shows
+                                    <span class="material-icons md-64">
+                                        theaters
+                                    </span>
                                 </a>
                                 <a class="link col-50 media-category" href="/otherMedia/">
-                                    Other Media
+                                    <span class="material-icons md-64">
+                                        perm_media
+                                    </span>
                                 </a>
                             </div>
                         </div>
