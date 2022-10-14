@@ -1,3 +1,8 @@
+:root {
+    --f7-grid-gap: 16px;
+    --f7-grid-row-gap: 16px;
+}
+
 html {
     margin: 0;
     padding: 0;
@@ -27,4 +32,13 @@ h1 {
     border-radius: 5px;
     float: left;
     object-fit: cover;
+}
+
+.media-categories-container {
+    padding: 20px;
+}
+
+.media-category {
+    text-align: center;
+    background-color: rgb(212, 212, 212);
 }
