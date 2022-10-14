@@ -39,6 +39,7 @@ h1 {
 }
 
 .media-category {
+    height: 30%;
     text-align: center;
     background-color: rgb(212, 212, 212);
 }
