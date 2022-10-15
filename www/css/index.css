@@ -1,10 +1,10 @@
 :root {
     --f7-grid-gap: 16px;
     --f7-grid-row-gap: 16px;
-    --f7-theme-color: #9c3c10;
-    --f7-theme-color-rgb: 156, 60, 16;
-    --f7-theme-color-shade: #772e0c;
-    --f7-theme-color-tint: #c14a14;
+    --f7-theme-color: #c76f22;
+    --f7-theme-color-rgb: 199, 111, 34;
+    --f7-theme-color-shade: #a45c1c;
+    --f7-theme-color-tint: #dd8335;
 }
 
 html {
@@ -14,12 +14,14 @@ html {
     color: var(--f7-theme-color);
     background-color: #f1f1f1;
 }
-/* 
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-} */
+
+.home-page {
+    background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url(../img/other/fall_pic2.jpg);
+}
+
+.card {
+    box-shadow: 5px 4px var(--f7-theme-color);
+}
 
 .card-content span {
     display: inline-block;
@@ -48,8 +50,7 @@ html {
     color: var(--f7-theme-color);
     text-align: center;
     border-radius: 10px;
-    background-color: rgb(212, 212, 212);
-    background-image:linear-gradient(to bottom, #ebebeb 0%, #dddddd 51%);
+    background-image:linear-gradient(to bottom, #333333 0%, #292929 100%);
     box-shadow: 5px 4px;
 }
 
@@ -66,10 +67,12 @@ html {
     color: var(--f7-theme-color);
     text-align: center;
     border-radius: 10px;
-    background-color: rgb(212, 212, 212);
-    background-image:linear-gradient(to bottom, #ebebeb 0%, #dddddd 51%);
-    box-shadow: 5px 4px;
-    width: 91%;
+    background-image:linear-gradient(to bottom, #333333 0%, #292929 100%);
+    box-shadow: 5px 4px var(--f7-theme-color);
+    width: 90%;
     margin: auto;
     margin-top: 10%;
+    margin-bottom: 0px;
+    padding: 1px;
+    font-size: 20px;
 }
